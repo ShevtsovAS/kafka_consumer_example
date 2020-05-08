@@ -7,4 +7,4 @@ spring:
       group-id: test_group_id
 
 kafka:
-  topic: test_topic
+  student-topic: student_topic

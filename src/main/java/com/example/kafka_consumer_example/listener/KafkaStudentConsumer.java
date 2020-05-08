@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class KafkaConsumer {
+public class KafkaStudentConsumer {
     @KafkaListener(
-            topics = "${kafka.topic}",
+            topics = "${kafka.student-topic}",
             groupId = "${spring.kafka.consumer.group-id}",
             containerFactory = "studentListenerContainerFactory")
     public void consume(Student student) {

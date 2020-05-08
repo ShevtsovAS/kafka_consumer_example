@@ -22,7 +22,7 @@ public class StudentConsumerProperties {
 
     private final KafkaProperties kafkaProperties;
 
-    private String topic = "test_topic";
+    private String studentTopic = "student_topic";
     private JsonDeserializer<Student> studentDeserializer;
 
     {
